@@ -4,7 +4,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 export FRPS_VER=0.27.0
 export FRPS_INIT="https://raw.githubusercontent.com/jakehu/frp/master/frps-onekey/frps.init"
-export aliyun_download_url="https://github.com/fatedier/frp/releases/download"
+export jakehu_download_url="http://cdn.jakehu.me"
 export github_download_url="https://github.com/fatedier/frp/releases/download"
 #======================================================================
 #   System Required:  CentOS Debian or Ubuntu (32bit/64bit)
@@ -171,13 +171,13 @@ fun_getServer(){
     def_server_url="github"
     echo ""
     echo -e "Please select ${program_name} download url:"
-    echo -e "[1].aliyun "
+    echo -e "[1].jakehu "
     echo -e "[2].github (default)"
     read -e -p "Enter your choice (1, 2 or exit. default [${def_server_url}]): " set_server_url
     [ -z "${set_server_url}" ] && set_server_url="${def_server_url}"
     case "${set_server_url}" in
         1|[Aa][Ll][Ii][Yy][Uu][Nn])
-            program_download_url=${aliyun_download_url}
+            program_download_url=${jakehu_download_url}
             ;;
         2|[Gg][Ii][Tt][Hh][Uu][Bb])
             program_download_url=${github_download_url}
@@ -186,7 +186,7 @@ fun_getServer(){
             exit 1
             ;;
         *)
-            program_download_url=${aliyun_download_url}
+            program_download_url=${jakehu_download_url}
             ;;
     esac
     echo    "-----------------------------------"
