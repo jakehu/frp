@@ -35,3 +35,17 @@ frps版本：0.27.0
 # 使用
 docker run -d --restart always -v /data/frpc.ini:/frp/frpc.ini jakehu/frpc-docker
 ```
+
+### frps-docker
+
+##### 版本
+```
+脚本版本：19.06.27
+
+frps版本：0.27.0
+```
+#### 操作
+```bash
+# 使用
+docker run -d --restart always -v /data/frps.ini:/frp/frps.ini jakehu/frps-docker
+```
