@@ -1,0 +1,39 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  labels:
+    app: frps-jakehu
+  name: frps-jakehu
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: frps-jakehu
+  template:
+    metadata:
+      labels:
+        app: frps-jakehu
+    spec:
+      containers:
+        - image: 'jakehu/frps-docker:latest'
+          imagePullPolicy: Always
+          name: frps-jakehu
+          ports:
+            - containerPort: 5443
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frps-jakehu-service
+  labels:
+    app: frps-jakehu-svc
+spec:
+  selector:
+    app: frps-jakehu
+  ports:
+  - protocol: TCP
+    name: http
+    port: 80
+    targetPort: 5443 # 后端端口
+  type: LoadBalancer
