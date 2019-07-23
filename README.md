@@ -4,7 +4,7 @@
 ```
 脚本版本：19.06.27
 
-frps版本：0.27.0
+frps版本：0.27.1
 ```
 ##### 操作
 ```bash
@@ -28,7 +28,7 @@ frps {start|stop|restart|status|config|version}
 ```
 脚本版本：19.06.27
 
-frps版本：0.27.0
+frps版本：0.27.1
 ```
 #### 操作
 ```bash
@@ -42,7 +42,7 @@ docker run -d --restart always -v /data/frpc.ini:/frp/frpc.ini jakehu/frpc-docke
 ```
 脚本版本：19.06.27
 
-frps版本：0.27.0
+frps版本：0.27.1
 ```
 #### 操作
 ```bash
