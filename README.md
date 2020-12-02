@@ -2,9 +2,9 @@
 此脚本根据[clangcn/onekey-install-shell](https://github.com/clangcn/onekey-install-shell/tree/master/frps)脚本制作，感谢`Clang`大大
 ##### 版本
 ```
-脚本版本：20.05.11
+脚本版本：20.12.02
 
-frps版本：0.33.0
+frps版本：0.34.3
 ```
 ##### 操作
 ```bash
@@ -26,9 +26,9 @@ frps {start|stop|restart|status|config|version}
 
 ##### 版本
 ```
-脚本版本：20.05.11
+脚本版本：20.12.02
 
-frps版本：0.33.0
+frps版本：0.34.3
 ```
 #### 操作
 ```bash
@@ -40,9 +40,9 @@ docker run -d --restart always -v /data/frpc.ini:/frp/frpc.ini jakehu/frpc-docke
 
 ##### 版本
 ```
-脚本版本：20.05.11
+脚本版本：20.12.02
 
-frps版本：0.33.0
+frps版本：0.34.3
 ```
 #### 操作
 ```bash

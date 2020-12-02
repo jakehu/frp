@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 ###export###
 export PATH
-export FRPS_VER=0.33.0
+export FRPS_VER=0.34.3
 export FRPS_INIT="https://raw.githubusercontent.com/jakehu/frp/master/frps-onekey/frps.init"
 export jakehu_download_url="http://cdn.jakehu.me"
 export github_download_url="https://github.com/fatedier/frp/releases/download"
@@ -13,7 +13,7 @@ export github_download_url="https://github.com/fatedier/frp/releases/download"
 #   Mender：jakehu
 #======================================================================
 program_name="frps"
-version="20.05.11"
+version="20.12.02"
 str_program_dir="/usr/local/${program_name}"
 program_init="/etc/init.d/${program_name}"
 program_config_file="frps.ini"
